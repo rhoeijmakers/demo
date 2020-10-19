@@ -5,13 +5,33 @@
 	<title>Audio compressie</title>
 </head>
 <body>
-<h1>Digital audio</h1>
+<h1 id="digital-audio">Digital audio</h1>
 
 <p>Different aspects of Digital Audio explained and demo’ed. </p>
 
-<p>For Mic to recording, to podcast stream, to wireless earphones. AAC all the way or use high quality uncompressed audio to compress later?</p>
+<p>For Mic to recording, to podcast stream, to wireless earphones. AAC all the way or use high quality uncompressed audio to compress later?</p><div class="TOC">
 
-<h2>Compression</h2>
+
+<ul>
+<li><a href="#digital-audio">Digital audio</a>
+
+<ul>
+<li><a href="#compression">Compression</a></li>
+<li><a href="#codecs">Codecs</a></li>
+<li><a href="#bitrate">Bitrate</a></li>
+<li><a href="#sample-rate-or-frequency">Sample rate or frequency</a></li>
+<li><a href="#bit-depth-16bit-24bit">Bit depth, 16bit / 24bit</a></li>
+<li><a href="#hd-audio">HD Audio</a></li>
+<li><a href="#dolby-atmos-surround">Dolby Atmos surround</a></li>
+<li><a href="#microphone">Microphone</a></li>
+<li><a href="#wireless-headphones">Wireless headphones</a></li>
+<li><a href="#audio-in-applications">Audio in applications</a></li>
+<li><a href="#audio-compression-comparisons-and-examples">Audio compression comparisons and examples</a></li>
+</ul></li>
+</ul>
+</div>
+
+<h2 id="compression">Compression</h2>
 
 <p>Uncompressed digital audio files are large. There are compressions that are lossless (great for portability) and lossy (for standard playing and streaming). </p>
 
@@ -21,13 +41,13 @@
 <li>Lossy compression (MP3, AAC, WMA, OGG)</li>
 </ol>
 
-<h2>Codecs</h2>
+<h2 id="codecs">Codecs</h2>
 
 <p>The codec is software that compresses an audio file. The word derives from Coding and Decoding. There are different brands of codecs. Some examples: AAC, MP3, WAV, WMA.</p>
 
 <p>An audio file that is compressed with the AAC coded needs a files extension called M4A.</p>
 
-<h2>Bitrate</h2>
+<h2 id="bitrate">Bitrate</h2>
 
 <p>Bitrate is the measure of the rate at which data is transferred from one point to another. It is measured in bits per second (bps), kilobits per second (kbps), or megabits per second (Mbps).</p>
 
@@ -39,15 +59,21 @@
 <p>Bitrate formula = Sample rate x Bit-depth x No. of Channels </p>
 </blockquote>
 
+<p>A typical, uncompressed high-quality audio file has a sample rate of 44,100 samples per second, a bit depth of 16 bits per sample and 2 channels of stereo audio. The bit rate for this file would be:</p>
+
+<p>44,100 samples per second × 16 bits per sample × 2 channels = 1,411,200 bits per second (or 1,411.2 kbps)</p>
+
 <figure>
 <img src="https://www.headphonesty.com/wp-content/uploads/2020/03/Bluetooth-Audio-Codecs-Explained_Audio-Bitrate-Comparison.jpg" alt="" />
 </figure>
 
-<h2>Sampling and bitrate</h2>
+<h2 id="sample-rate-or-frequency">Sample rate or frequency</h2>
+
+<p>How many samples of data are taken per second. This is normally measured in hertz, eg an audio file usually uses samples of 44.1 kHz (44,100 audio samples per second).</p>
 
 <p>Example: Actually a single voice signal occupies 8 kHz, not 8 kbps, of bandwidth. Each sample is quantized into 8 bits, yielding a rate of 64 kbps which is used universally.</p>
 
-<h2>Bit depth, 16bit / 24bit</h2>
+<h2 id="bit-depth-16bit-24bit">Bit depth, 16bit / 24bit</h2>
 
 <p>For music, the bit depths you will come across are 16bit and 24bit. While the sample rate is concerned with capturing frequency accurately, bit depth is related to dynamic range.</p>
 
@@ -61,21 +87,27 @@
 
 <p>Bit depth is fixed for PCM encoding, but for lossy compression codecs (like MP3 and AAC) it is calculated during encoding and can vary from sample to sample.</p>
 
-<h2>HD Audio</h2>
+<p><a href="https://youtu.be/IPGU_Wv9VgQ">Bit depth comparison</a></p>
+
+<h2 id="hd-audio">HD Audio</h2>
 
 <p>As internet speeds have increased and technology has developed, lossless formats have become more popular as a means to distribute and purchase music. Music streaming platforms like Qobuz and Tidal are already using lossless files.</p>
 
 <p>Digital HD formats such as FLAC, ALAC, WAV, and AIFF, are the choice of audiophiles and music collectors who are moving away from the physical medium.</p>
 
-<h2>Dolby Atmos surround</h2>
+<figure>
+<img src="https://homedjstudio.com/wp-content/uploads/2019/05/Audio-Formats-Bitrate-File-Size.jpg" alt="" />
+</figure>
 
-<p>The Apple AirPods Pro now support Dolby Atmos Surround, also referred to as Spatial Audio.. Spatial audio with dynamic head tracking brings a theater-like surround-sound experience to the movie or video you're watching, so that it seems as if the sound is coming from all around you. The sound field stays mapped to the actor or action on the screen even as you move your head or your device.</p>
+<h2 id="dolby-atmos-surround">Dolby Atmos surround</h2>
 
-<h2>Microphone</h2>
+<p>The Apple AirPods Pro now support Dolby Atmos Surround, also referred to as Spatial Audio. Spatial audio with dynamic head tracking brings a theater-like surround-sound experience to the movie or video you're watching, so that it seems as if the sound is coming from all around you. The sound field stays mapped to the actor or action on the screen even as you move your head or your device.</p>
+
+<h2 id="microphone">Microphone</h2>
 
 <p>Different types and the naming. </p>
 
-<h2>Wireless headphones</h2>
+<h2 id="wireless-headphones">Wireless headphones</h2>
 
 <p>Wireless audio can be a bit confusing, and is super complex, especially when talking about codecs. Knowing which codecs are supported on your devices will help create a superior wireless audio experience.</p>
 
@@ -83,10 +115,11 @@
 
 <p>Apple only supports SBC and AAC on its devices. Everything purchased or streamed via iTunes or Apple Music is encoded over AAC. The only exception is the Mac, which supports aptX.</p>
 
-<h2>Audio in applications</h2>
+<h2 id="audio-in-applications">Audio in applications</h2>
 
 <table>
 <colgroup>
+<col style="text-align:left;"/>
 <col style="text-align:left;"/>
 <col style="text-align:left;"/>
 <col style="text-align:left;"/>
@@ -97,56 +130,62 @@
 	<th style="text-align:left;">Application</th>
 	<th style="text-align:left;">Audio Codec</th>
 	<th style="text-align:left;">Sampling rate</th>
+	<th style="text-align:left;">Bit rate</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
 	<td style="text-align:left;">Netflix</td>
-	<td style="text-align:left;" colspan="2">Multiple</td>
+	<td style="text-align:left;" colspan="3">Multiple</td>
 </tr>
 <tr>
 	<td style="text-align:left;">Whatsapp</td>
-	<td style="text-align:left;" colspan="2">OPUS</td>
+	<td style="text-align:left;" colspan="3">OPUS</td>
 </tr>
 <tr>
 	<td style="text-align:left;">CD</td>
-	<td style="text-align:left;" colspan="2">N/A</td>
+	<td style="text-align:left;">N/A</td>
+	<td style="text-align:left;" colspan="2">44.1 kHz</td>
 </tr>
 <tr>
 	<td style="text-align:left;">FaceTime</td>
-	<td style="text-align:left;" colspan="2">AAC-LD</td>
+	<td style="text-align:left;">AAC-LD</td>
+	<td style="text-align:left;" colspan="2">16kHz</td>
 </tr>
 <tr>
 	<td style="text-align:left;" colspan="2">AM Radio</td>
-	<td style="text-align:left;">5 kHz</td>
+	<td style="text-align:left;" colspan="2">5 kHz</td>
 </tr>
 <tr>
 	<td style="text-align:left;" colspan="2">Phone call</td>
-	<td style="text-align:left;">8 kHz</td>
+	<td style="text-align:left;" colspan="2">8 kHz</td>
 </tr>
 <tr>
 	<td style="text-align:left;">Apple Music</td>
-	<td style="text-align:left;" colspan="2">AAC</td>
+	<td style="text-align:left;" colspan="3">AAC</td>
 </tr>
 <tr>
 	<td style="text-align:left;">Spotify Free</td>
 	<td style="text-align:left;">AAC</td>
+	<td style="text-align:left;">44.1 kHz</td>
 	<td style="text-align:left;">128 kbits/s</td>
 </tr>
 <tr>
 	<td style="text-align:left;">Spotify Premium</td>
 	<td style="text-align:left;">AAC</td>
+	<td style="text-align:left;">44.1 kHz</td>
 	<td style="text-align:left;">256 kbits/s</td>
 </tr>
 <tr>
 	<td style="text-align:left;">Skype</td>
-	<td style="text-align:left;" colspan="2">SILK</td>
+	<td style="text-align:left;">SILK</td>
+	<td style="text-align:left;" colspan="2">Variable</td>
 </tr>
 </tbody>
 </table>
 
-<h2>Audio compression comparisons and examples</h2>
+<h2 id="audio-compression-comparisons-and-examples">Audio compression comparisons and examples</h2>
 
 <table>
 <colgroup>
@@ -164,11 +203,6 @@
 </thead>
 
 <tbody>
-<tr>
-	<td style="text-align:left;"><a href="Glass.aiff">AIFF</a></td>
-	<td style="text-align:left;">2 mbps</td>
-	<td style="text-align:left;">250 KB</td>
-</tr>
 <tr>
 	<td style="text-align:left;"><a href="Glass-160.m4a">AAC</a></td>
 	<td style="text-align:left;">160 kbps</td>
@@ -198,6 +232,11 @@
 	<td style="text-align:left;"><a href="Glass.wav">WAV</a></td>
 	<td style="text-align:left;">1411 kbps</td>
 	<td style="text-align:left;">155KB</td>
+</tr>
+<tr>
+	<td style="text-align:left;"><a href="Glass.aiff">AIFF</a></td>
+	<td style="text-align:left;">2 mbps</td>
+	<td style="text-align:left;">250 KB</td>
 </tr>
 </tbody>
 </table>
