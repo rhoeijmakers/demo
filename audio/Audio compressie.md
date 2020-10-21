@@ -4,8 +4,6 @@ Different aspects of Digital Audio explained and demo’ed.
 
 For Mic to recording, to podcast stream, to wireless earphones. AAC all the way or use high quality uncompressed audio to compress later?
 
-{{TOC}}
-
 ## Compression
 
 Uncompressed digital audio files are large. There are compressions that are lossless (great for portability) and lossy (for standard playing and streaming). 
