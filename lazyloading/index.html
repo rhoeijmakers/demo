@@ -3,6 +3,16 @@
     <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
+  <script>
+  if ('loading' in HTMLImageElement.prototype) {
+      // Browser supports `loading`..
+      console.log("Lazy");
+  } else {
+     // Fetch and apply a polyfill/JavaScript library
+     // for lazy-loading instead.
+      console.log("No Lazy");
+  }
+  </script>
 <h1>Lazy loading</h1>
 <h2>Summer</h2>
 <img src="summer.jpg" loading="lazy" alt="..." />
